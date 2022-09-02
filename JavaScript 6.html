@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+ <head>
+     <meta charset="utf-8">
+        <title>JavaScript 6</title>
+            <script type="text/javascript">
+                function tabuada(){
+                           
+                    var num = parseInt(document.getElementById("num").value);
+                                  
+                    for(var count=1; count<=10 ; count++)
+                    {
+                        document.getElementById("num"+count).value= num + " x " + count;
+                        document.getElementById("resposta"+count).value=num*count;
+                                             
+                    }
+                }    
+            </script>
+ </head>
+    <body>
+        
+
+        
+    
+        <table border="2" width="100px" size="500px" ><center>
+            <tr><td colspan="2" bgcolor="cyan"><h1 id="h1">Calculadora de Tabuadas</h1></td></tr>
+            
+            <tr><td bgcolor="white"><button onclick="tabuada()">Tabuada do</button></td><td> <input id="num" type="number"></td></tr>	
+
+            <tr><td bgcolor="lightgray"><input type="text" id="num1" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta1" value=""> </td></tr>
+            
+            <tr><td bgcolor="gray"><input type="text" id="num2" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta2" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num3" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta3" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num4" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta4" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num5" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta5" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num6" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta6" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num7" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta7" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num8" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta8" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num9" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta9" value=""> </td></tr>
+            <tr><td bgcolor="gray"><input type="text" id="num10" value=""></td><td bgcolor="cyan"> <input type="number" id="resposta10" value=""> </td></tr>	
+            						
+        </table></center>
+    </body>
+</html>
+
